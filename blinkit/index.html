@@ -1,1 +1,169 @@
 
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Data Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="../assets/img/blinkit.svg" type="image/png">
+    <link rel="stylesheet" href="../assets/dashboard.css">
+</head>
+
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fas fa-moon"></i>
+</button>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png" 
+                 alt="Profile Picture" 
+                 class="profile-image">
+            <h1 class="profile-name">Pankaj Shah</h1>
+            <p class="profile-title">Blinkit Power BI Dashboard</p>
+        </div>
+
+        <!-- Interactive Dashboard -->
+        <article class="dashboard-container">
+            <div class="dashboard-loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading Interactive Dashboard...</p>
+            </div>
+            <div class="dashboard-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
+            </div>
+            <iframe
+                id="powerbi-iframe"
+                data-src="https://app.powerbi.com/view?r=eyJrIjoiOWI4ZTlkNmYtYjZiOS00NzllLWIxOTYtZTAzYzViYjI5YmVkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+                title="Blinkit Business Analytics Dashboard"
+                data-aspect-ratio="1.778"
+            ></iframe>
+        </article>
+
+        <!-- Sections (same content as before) -->
+         <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Sales Overview</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Sales Overview report offers a comprehensive breakdown of sales performance across various regions,
+          time periods, and product categories. It identifies trends, peak sales periods, and revenue contributions from
+          key areas. This report helps businesses understand sales drivers and plan strategies to boost overall revenue.
+        </p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Overview Report</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Overview report provides a high-level snapshot of the business performance across key metrics. It highlights
+          total revenue, orders, operational efficiency, and customer engagement. This report serves as a quick summary for
+          stakeholders to assess overall business health and growth trends.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Customer Report</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <ul>
+          <p>The Customer report focuses on customer behavior and order patterns. It includes insights such as
+            top-ordering customers, repeat purchase rates, and demographic details. This report helps businesses
+            identify loyal customers, understand preferences, and enhance satisfaction by addressing customer needs
+            effectively.</p>
+        </ul>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Inventory Report</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>Track operational KPIs such as delivery time, efficiency rates, and partner performance to improve overall
+          workflow.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Marketing Report</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Marketing report analyzes the impact of campaigns and promotions on sales and customer acquisition. It
+          tracks key metrics like conversion rates, ad performance, and revenue generated from marketing efforts. By
+          identifying successful campaigns, businesses can optimize marketing strategies for better ROI.</p>
+      </div>
+    </div>
+
+    <!-- Download Project Button -->
+    <a href="https://drive.google.com/file/d/129fueXPjtiTgNUCO1WlL-NLSRfXxUAgj/view?usp=drivesdk" download="Blinkit Power BI Dashboard.pdf"
+      class="download-button">Download Project PDF</a>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" style="padding: 2rem 0;">
+      <div class="container">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Skill Used</h2>
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL</h3>
+            <p>Data querying and database management</p>
+          </div>
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Power BI</h3>
+            <p>Data visualization and dashboards</p>
+          </div>
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fab fa-figma"></i>
+            </div>
+            <h3>Figma</h3>
+            <p>Design Theme and elements</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-section">
+      <div class="social-links">
+        <a href="https://instagram.com/pankajshah.1" class="instagram" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://linkedin.com/in/pankaj8782" class="linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/pankaj8782" class="github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:pankaj8782.upl@gmail.com?subject=Feedback/Query%20on%20Blinkit%20Power%20BI%20Dashboard&body=Hi%20Pankaj%2C%0D%0A%0D%0AI%20recently%20reviewed%20your%20Blinkit%20Power%20BI%20dashboard%20and%20wanted%20to%20connect%20regarding%20[feedback%2Fquery%2Fcollaboration]%20on%20[specify%20details]%2E%0D%0A%0D%0ALook%20forward%20to%20hearing%20from%20you%21%0D%0A%0D%0ABest%2C%0D%0A[Recipient%27s%20Name]"
+          class="gmail" title="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://pankajshah.netlify.app" class="portfolio" title="Portfolio | Pankaj">
+          <i class="fas fa-briefcase"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+        <!-- Main Javascript -->
+        <script src="../assets/dashboard.js"></script>
+</body>
+</html>
