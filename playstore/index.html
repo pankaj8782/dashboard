@@ -1,1 +1,191 @@
 
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStore Data Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="../assets/img/playstore.svg" type="image/png">
+    <link rel="stylesheet" href="../assets/dashboard.css">
+</head>
+
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fas fa-moon"></i>
+</button>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png" 
+                 alt="Profile Picture" 
+                 class="profile-image">
+            <h1 class="profile-name">Pankaj Shah</h1>
+            <p class="profile-title">Play Store Power BI Dashboard</p>
+        </div>
+
+        <!-- Interactive Dashboard -->
+        <article class="dashboard-container">
+            <div class="dashboard-loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading Interactive Dashboard...</p>
+            </div>
+            <div class="dashboard-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
+            </div>
+            <iframe
+                id="powerbi-iframe"
+                data-src="https://app.powerbi.com/view?r=eyJrIjoiYTlhNGJkMzAtNzhmMy00YjMwLTljM2ItYzg2NWVmMmQwNWRlIiwidCI6IjhhZWUyYmQ0LTk5OWItNGFiYS1hNWM1LWE1ZGI0ZTczYjA3NSJ9"
+                title="Blinkit Business Analytics Dashboard"
+                data-aspect-ratio="1.778"
+            ></iframe>
+        </article>
+
+        <div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Component Overview</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">
+    
+    <p>This donut chart displays the proportion of top-performing apps based on key metrics like downloads and revenue, allowing quick identification of market leaders.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Key Metric</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">
+    
+    <p>A card visual showcasing the aggregate number of users, providing an at-a-glance view of the platform’s reach and engagement.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Performance Metrics</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">
+    
+    <p>These KPI cards summarize crucial data:
+      <strong>Total Categories</strong>,
+      <strong>Total Apps</strong>,
+      <strong>Revenue</strong>,
+      <strong>Average App Size</strong>.
+      They provide insights into the platform’s scale, financial performance, and app characteristics.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Genre Performance Funnel</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">
+    
+    <p>This funnel chart ranks app genres based on ratings, highlighting which genres excel and where improvements can be made.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Interactive Filtering</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">
+    
+    <p>The year slicer enables users to filter dashboard data by specific years, allowing detailed historical trend analysis and performance tracking.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Genre Distribution</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">
+    <p>This donut chart breaks down top apps by genre, revealing consumer preferences and guiding targeted marketing and product development strategies.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <h2 class="section-title">Content Suitability</h2>
+    <div class="section-toggle">+</div>
+  </div>
+  <div class="section-content">  
+    <p>This section displays the distribution of app content ratings (Employee, Mature, Teen, Adult), offering insights into content appropriateness and aiding in audience targeting.</p>
+  </div>
+</div>
+
+        <!-- Download Project Button -->
+        <a href="https://drive.google.com/file/d/118uywlBTvn0T6B7MvQjNZ_ylLginsAxA/view"
+            class="download-button">Download Project PDF</a>
+
+
+    <!-- Technical Skills Section -->
+    <section id="skills" style="padding: 2rem 0;">
+      <div class="container">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Skill Used</h2>
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL</h3>
+            <p>Data querying and database management</p>
+          </div>
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Power BI</h3>
+            <p>Data visualization and dashboards</p>
+          </div>
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fab fa-figma"></i>
+            </div>
+            <h3>Figma</h3>
+            <p>Design Theme and elements</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-section">
+      <div class="social-links">
+        <a href="https://instagram.com/pankajshah.1" class="instagram" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://linkedin.com/in/pankaj8782" class="linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/pankaj8782" class="github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:pankaj8782.upl@gmail.com?subject=Feedback/Query%20on%20Playstore%20Power%20BI%20Dashboard&body=Hi%20Pankaj%2C%0D%0A%0D%0AI%20recently%20reviewed%20your%20Playstore%20Power%20BI%20dashboard%20and%20wanted%20to%20connect%20regarding%20[feedback%2Fquery%2Fcollaboration]%20on%20[specify%20details]%2E%0D%0A%0D%0ALook%20forward%20to%20hearing%20from%20you%21%0D%0A%0D%0ABest%2C%0D%0A[Recipient%27s%20Name]"
+          class="gmail" title="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://pankajshah.netlify.app" class="portfolio" title="Portfolio | Pankaj">
+          <i class="fas fa-briefcase"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+        <!-- Main Javascript -->
+        <script src="../assets/dashboard.js"></script>
+</body>
+</html>
