@@ -6,7 +6,7 @@ Welcome to the **Amazon Sales Insights** Power BI report repository. This intera
 
 ## Live Preview
 
-[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739976326/obwpsu97o6j0ofskc7qd.png)](https://bi-dashboard.netlify.app/amazon/)
+[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739976326/obwpsu97o6j0ofskc7qd.png)](https://bi-analysis.netlify.app/amazon/)
 
 *Click the banner above to access the live, interactive Power BI report.*
 
