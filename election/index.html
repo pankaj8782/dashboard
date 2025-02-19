@@ -1,1 +1,170 @@
 
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Data Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="../assets/img/election.svg" type="image/png">
+    <link rel="stylesheet" href="../assets/dashboard.css">
+</head>
+
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fas fa-moon"></i>
+</button>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png" 
+                 alt="Profile Picture" 
+                 class="profile-image">
+            <h1 class="profile-name">Pankaj Shah</h1>
+            <p class="profile-title">Election Power BI Dashboard</p>
+        </div>
+
+        <!-- Interactive Dashboard -->
+        <article class="dashboard-container">
+            <div class="dashboard-loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading Interactive Dashboard...</p>
+            </div>
+            <div class="dashboard-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
+            </div>
+            <iframe
+                id="powerbi-iframe"
+                data-src="https://app.powerbi.com/view?r=eyJrIjoiNDdiMzZmMDEtNjA1ZC00YTQ1LWE5NzktZjIxYzU5YmYzOTUyIiwidCI6IjhhZWUyYmQ0LTk5OWItNGFiYS1hNWM1LWE1ZGI0ZTczYjA3NSJ9"
+                title="Blinkit Business Analytics Dashboard"
+                data-aspect-ratio="1.778"
+            ></iframe>
+        </article>
+
+       <div class="section">
+    <div class="section-header">
+        <h2 class="section-title">Election Trends</h2>
+        <div class="section-toggle">+</div>
+    </div>
+    <div class="section-content">
+        <p>
+            This dashboard provides a comprehensive view of election details from 1977 to 2014, covering 11 election cycles. It tracks key trends such as voter turnout, party performance, and electoral shifts over the decades, offering historical insights into the changing political landscape.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        <h2 class="section-title">Geographical Insights</h2>
+        <div class="section-toggle">+</div>
+    </div>
+    <div class="section-content">
+        <p>
+            A shape map visual displays district-level results, enabling users to explore regional differences and identify areas with significant electoral activity. This spatial representation highlights district performance across diverse regions.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        <h2 class="section-title">Party Performance</h2>
+        <div class="section-toggle">+</div>
+    </div>
+    <div class="section-content">
+        <p>
+            Utilizing a top 10 party slicer, the dashboard allows for filtering and comparing performance across all major political parties. Detailed analysis of party trends facilitates a better understanding of their influence and strategic positioning over time.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        <h2 class="section-title">Voting Metrics</h2>
+        <div class="section-toggle">+</div>
+    </div>
+    <div class="section-content">
+        <p>
+            The dashboard features a speed meter for total voting polls and a donut chart breaking down total voting between elevators and voters. These visuals provide quick insights into overall voter engagement and the efficiency of the electoral process.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        <h2 class="section-title">Candidate & Demographics</h2>
+        <div class="section-toggle">+</div>
+    </div>
+    <div class="section-content">
+        <p>
+            Detailed candidate information is presented via a scatter chart and an interactive candidate table. Additionally, demographic insights are provided through a male/female donut chart and a caste separation donut chart (ST, SC, General), uncovering patterns in candidate profiles and voter demographics.
+        </p>
+    </div>
+</div>
+
+        <!-- Download Project Button -->
+        <a href="https://drive.google.com/file/d/141P3pD6WOWkgOXIUFw1gRLKHceVt08Xd/view"
+            class="download-button">Download Project PDF</a>
+
+
+    <!-- Technical Skills Section -->
+    <section id="skills" style="padding: 2rem 0;">
+      <div class="container">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Skill Used</h2>
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL</h3>
+            <p>Data querying and database management</p>
+          </div>
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Power BI</h3>
+            <p>Data visualization and dashboards</p>
+          </div>
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div class="icon">
+              <i class="fab fa-figma"></i>
+            </div>
+            <h3>Figma</h3>
+            <p>Design Theme and elements</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-section">
+      <div class="social-links">
+        <a href="https://instagram.com/pankajshah.1" class="instagram" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://linkedin.com/in/pankaj8782" class="linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/pankaj8782" class="github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:pankaj8782.upl@gmail.com?subject=Feedback/Query%20on%20Election%20Power%20BI%20Dashboard&body=Hi%20Pankaj%2C%0D%0A%0D%0AI%20recently%20reviewed%20your%20Election%20Power%20BI%20dashboard%20and%20wanted%20to%20connect%20regarding%20[feedback%2Fquery%2Fcollaboration]%20on%20[specify%20details]%2E%0D%0A%0D%0ALook%20forward%20to%20hearing%20from%20you%21%0D%0A%0D%0ABest%2C%0D%0A[Recipient%27s%20Name]"
+          class="gmail" title="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://pankajshah.netlify.app" class="portfolio" title="Portfolio | Pankaj">
+          <i class="fas fa-briefcase"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+        <!-- Main Javascript -->
+        <script src="../assets/dashboard.js"></script>
+</body>
+</html>
