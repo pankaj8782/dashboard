@@ -2,114 +2,110 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Data Visualization</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="../assets/img/amazon.svg" type="image/png">
-    <link rel="stylesheet" href="../assets/dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Data Visualization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="../assets/img/amazon.svg" type="image/png">
+  <link rel="stylesheet" href="../assets/dashboard.css">
 </head>
 
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">
-  <i class="fas fa-moon"></i>
-</button>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i>
+  </button>
 
-    <div class="container">
-        <!-- Profile Section -->
-        <div class="profile">
-            <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png" 
-                 alt="Profile Picture" 
-                 class="profile-image">
-            <h1 class="profile-name">Pankaj Shah</h1>
-            <p class="profile-title">Amazon Power BI Dashboard</p>
-        </div>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png"
+        alt="Profile Picture" class="profile-image">
+      <h1 class="profile-name">Pankaj Shah</h1>
+      <p class="profile-title">Amazon Power BI Dashboard</p>
+    </div>
 
-        <!-- Interactive Dashboard -->
-        <article class="dashboard-container">
-            <div class="dashboard-loader">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>Loading Interactive Dashboard...</p>
-            </div>
-            <div class="dashboard-error">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
-            </div>
-            <iframe
-                id="powerbi-iframe"
-                data-src="https://app.powerbi.com/view?r=eyJrIjoiZjYzY2EwODEtMzc3Mi00YTE4LWEzY2QtZjcwM2U2YjljNDliIiwidCI6IjhhZWUyYmQ0LTk5OWItNGFiYS1hNWM1LWE1ZGI0ZTczYjA3NSJ9"
-                title="Blinkit Business Analytics Dashboard"
-                data-aspect-ratio="1.778"
-            ></iframe>
-        </article>
+    <!-- Interactive Dashboard -->
+    <article class="dashboard-container">
+      <div class="dashboard-loader">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading Interactive Dashboard...</p>
+      </div>
+      <div class="dashboard-error">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
+      </div>
+      <iframe id="powerbi-iframe"
+        data-src="https://app.powerbi.com/view?r=eyJrIjoiZjYzY2EwODEtMzc3Mi00YTE4LWEzY2QtZjcwM2U2YjljNDliIiwidCI6IjhhZWUyYmQ0LTk5OWItNGFiYS1hNWM1LWE1ZGI0ZTczYjA3NSJ9"
+        title="Blinkit Business Analytics Dashboard" data-aspect-ratio="1.778"></iframe>
+    </article>
 
-        <div class="section">
-            <div class="section-header">
-                <h2 class="section-title">Profit Trends</h2>
-                <div class="section-toggle">+</div>
-            </div>
-            <div class="section-content">
-                <p>The Total Earned Profit fluctuates over time, with specific periods of high profitability.
-                    Identifying these growth peaks can help recognize factors contributing to success, such as
-                    promotions or product launches, while low periods indicate where improvements could be made.</p>
-            </div>
-        </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Profit Trends</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Total Earned Profit fluctuates over time, with specific periods of high profitability.
+          Identifying these growth peaks can help recognize factors contributing to success, such as
+          promotions or product launches, while low periods indicate where improvements could be made.</p>
+      </div>
+    </div>
 
-        <div class="section">
-            <div class="section-header">
-                <h2 class="section-title">Discount Impact</h2>
-                <div class="section-toggle">+</div>
-            </div>
-            <div class="section-content">
-                <p>The Discount Issued shows a direct correlation with sales trends. Analyzing the relationship between
-                    discounts and the total quantity sold can reveal whether discount strategies are effectively
-                    boosting sales or eroding profit margins.</p>
-            </div>
-        </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Discount Impact</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Discount Issued shows a direct correlation with sales trends. Analyzing the relationship between
+          discounts and the total quantity sold can reveal whether discount strategies are effectively
+          boosting sales or eroding profit margins.</p>
+      </div>
+    </div>
 
-        <div class="section">
-            <div class="section-header">
-                <h2 class="section-title">City Performance</h2>
-                <div class="section-toggle">+</div>
-            </div>
-            <div class="section-content">
-                <ul>
-                    <p>The Top Performing Cities chart indicates significant differences in sales growth between
-                        regions. Identifying the high-performing cities can guide targeted marketing efforts, while
-                        low-performing cities may highlight areas needing promotional support or product adjustments.
-                    </p>
-                </ul>
-            </div>
-        </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">City Performance</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <ul>
+          <p>The Top Performing Cities chart indicates significant differences in sales growth between
+            regions. Identifying the high-performing cities can guide targeted marketing efforts, while
+            low-performing cities may highlight areas needing promotional support or product adjustments.
+          </p>
+        </ul>
+      </div>
+    </div>
 
-        <div class="section">
-            <div class="section-header">
-                <h2 class="section-title">Shopping Mode</h2>
-                <div class="section-toggle">+</div>
-            </div>
-            <div class="section-content">
-                <p>The Shopping Mode Donut Chart shows a breakdown of consumer preferences, with categories such as
-                    Economy, Economy Plus, Priority, and Intermediate. Understanding this data can help optimize product
-                    offerings and promotional strategies tailored to the most popular shopping modes.</p>
-            </div>
-        </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Shopping Mode</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Shopping Mode Donut Chart shows a breakdown of consumer preferences, with categories such as
+          Economy, Economy Plus, Priority, and Intermediate. Understanding this data can help optimize product
+          offerings and promotional strategies tailored to the most popular shopping modes.</p>
+      </div>
+    </div>
 
-        <div class="section">
-            <div class="section-header">
-                <h2 class="section-title">Products & Customers</h2>
-                <div class="section-toggle">+</div>
-            </div>
-            <div class="section-content">
-                <p>The Top Product and Top Customer bar charts provide insights into which products are driving the most
-                    sales and which customers are making the largest purchases. This can guide inventory management and
-                    personalized marketing for high-value customers.</p>
-            </div>
-        </div>
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">Products & Customers</h2>
+        <div class="section-toggle">+</div>
+      </div>
+      <div class="section-content">
+        <p>The Top Product and Top Customer bar charts provide insights into which products are driving the most
+          sales and which customers are making the largest purchases. This can guide inventory management and
+          personalized marketing for high-value customers.</p>
+      </div>
+    </div>
 
-        <!-- Download Project Button -->
-        <a href="https://drive.google.com/file/d/10axTUYBfucpizOCyq2LZq3fbOG2sFyXM/view"
-            class="download-button">Download Project PDF</a>
+    <!-- Download Project Button -->
+    <a href="https://drive.google.com/file/d/10axTUYBfucpizOCyq2LZq3fbOG2sFyXM/view" class="download-button">Download
+      Project PDF</a>
 
 
     <!-- Technical Skills Section -->
@@ -166,8 +162,8 @@
       </div>
     </div>
   </div>
-        <!-- Main Javascript -->
-        <script src="../assets/dashboard.js"></script>
+  <!-- Main Javascript -->
+  <script src="../assets/dashboard.js"></script>
 </body>
-</html>
 
+</html>

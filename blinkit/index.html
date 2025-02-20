@@ -1,52 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blinkit Data Visualization</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="../assets/img/blinkit.svg" type="image/png">
-    <link rel="stylesheet" href="../assets/dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinkit Data Visualization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="../assets/img/blinkit.svg" type="image/png">
+  <link rel="stylesheet" href="../assets/dashboard.css">
 </head>
 
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">
-  <i class="fas fa-moon"></i>
-</button>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i>
+  </button>
 
-    <div class="container">
-        <!-- Profile Section -->
-        <div class="profile">
-            <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png" 
-                 alt="Profile Picture" 
-                 class="profile-image">
-            <h1 class="profile-name">Pankaj Shah</h1>
-            <p class="profile-title">Blinkit Power BI Dashboard</p>
-        </div>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png"
+        alt="Profile Picture" class="profile-image">
+      <h1 class="profile-name">Pankaj Shah</h1>
+      <p class="profile-title">Blinkit Power BI Dashboard</p>
+    </div>
 
-        <!-- Interactive Dashboard -->
-        <article class="dashboard-container">
-            <div class="dashboard-loader">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>Loading Interactive Dashboard...</p>
-            </div>
-            <div class="dashboard-error">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
-            </div>
-            <iframe
-                id="powerbi-iframe"
-                data-src="https://app.powerbi.com/view?r=eyJrIjoiOWI4ZTlkNmYtYjZiOS00NzllLWIxOTYtZTAzYzViYjI5YmVkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-                title="Blinkit Business Analytics Dashboard"
-                data-aspect-ratio="1.778"
-            ></iframe>
-        </article>
+    <!-- Interactive Dashboard -->
+    <article class="dashboard-container">
+      <div class="dashboard-loader">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading Interactive Dashboard...</p>
+      </div>
+      <div class="dashboard-error">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
+      </div>
+      <iframe id="powerbi-iframe"
+        data-src="https://app.powerbi.com/view?r=eyJrIjoiOWI4ZTlkNmYtYjZiOS00NzllLWIxOTYtZTAzYzViYjI5YmVkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+        title="Blinkit Business Analytics Dashboard" data-aspect-ratio="1.778"></iframe>
+    </article>
 
-        <!-- Sections (same content as before) -->
-         <div class="section">
+    <!-- Sections (same content as before) -->
+    <div class="section">
       <div class="section-header">
         <h2 class="section-title">Sales Overview</h2>
         <div class="section-toggle">+</div>
@@ -64,8 +59,10 @@
         <div class="section-toggle">+</div>
       </div>
       <div class="section-content">
-        <p>The Overview report provides a high-level snapshot of the business performance across key metrics. It highlights
-          total revenue, orders, operational efficiency, and customer engagement. This report serves as a quick summary for
+        <p>The Overview report provides a high-level snapshot of the business performance across key metrics. It
+          highlights
+          total revenue, orders, operational efficiency, and customer engagement. This report serves as a quick summary
+          for
           stakeholders to assess overall business health and growth trends.</p>
       </div>
     </div>
@@ -106,8 +103,8 @@
     </div>
 
     <!-- Download Project Button -->
-    <a href="https://drive.google.com/file/d/129fueXPjtiTgNUCO1WlL-NLSRfXxUAgj/view?usp=drivesdk" download="Blinkit Power BI Dashboard.pdf"
-      class="download-button">Download Project PDF</a>
+    <a href="https://drive.google.com/file/d/129fueXPjtiTgNUCO1WlL-NLSRfXxUAgj/view?usp=drivesdk"
+      download="Blinkit Power BI Dashboard.pdf" class="download-button">Download Project PDF</a>
 
     <!-- Technical Skills Section -->
     <section id="skills" style="padding: 2rem 0;">
@@ -163,7 +160,8 @@
       </div>
     </div>
   </div>
-        <!-- Main Javascript -->
-        <script src="../assets/dashboard.js"></script>
+  <!-- Main Javascript -->
+  <script src="../assets/dashboard.js"></script>
 </body>
+
 </html>

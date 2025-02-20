@@ -6,7 +6,7 @@ Welcome to the **Election Dashboard** Power BI report repository. This interacti
 
 ## Live Preview
 
-[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739972867/y2u6dtt2h2v7lddo7rqs.png)](https://bi-dashboard.netlify.app/election/)
+[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739972867/y2u6dtt2h2v7lddo7rqs.png)](https://bi-analysis.netlify.app/election/)
 
 *Click the banner above to access the live, interactive Power BI report.*
 

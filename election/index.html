@@ -1,113 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Election Data Visualization</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="../assets/img/election.svg" type="image/png">
-    <link rel="stylesheet" href="../assets/dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Election Data Visualization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="../assets/img/election.svg" type="image/png">
+  <link rel="stylesheet" href="../assets/dashboard.css">
 </head>
 
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">
-  <i class="fas fa-moon"></i>
-</button>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i>
+  </button>
 
-    <div class="container">
-        <!-- Profile Section -->
-        <div class="profile">
-            <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png" 
-                 alt="Profile Picture" 
-                 class="profile-image">
-            <h1 class="profile-name">Pankaj Shah</h1>
-            <p class="profile-title">Election Power BI Dashboard</p>
-        </div>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="https://res.cloudinary.com/ds6um53cx/image/upload/v1737699118/harq79xon5c2qwcofmfx.png"
+        alt="Profile Picture" class="profile-image">
+      <h1 class="profile-name">Pankaj Shah</h1>
+      <p class="profile-title">Election Power BI Dashboard</p>
+    </div>
 
-        <!-- Interactive Dashboard -->
-        <article class="dashboard-container">
-            <div class="dashboard-loader">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>Loading Interactive Dashboard...</p>
-            </div>
-            <div class="dashboard-error">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
-            </div>
-            <iframe
-                id="powerbi-iframe"
-                data-src="https://app.powerbi.com/view?r=eyJrIjoiNDdiMzZmMDEtNjA1ZC00YTQ1LWE5NzktZjIxYzU5YmYzOTUyIiwidCI6IjhhZWUyYmQ0LTk5OWItNGFiYS1hNWM1LWE1ZGI0ZTczYjA3NSJ9"
-                title="Blinkit Business Analytics Dashboard"
-                data-aspect-ratio="1.778"
-            ></iframe>
-        </article>
+    <!-- Interactive Dashboard -->
+    <article class="dashboard-container">
+      <div class="dashboard-loader">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading Interactive Dashboard...</p>
+      </div>
+      <div class="dashboard-error">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>Dashboard loading failed. <button onclick="loadDashboard()">Retry</button></p>
+      </div>
+      <iframe id="powerbi-iframe"
+        data-src="https://app.powerbi.com/view?r=eyJrIjoiNDdiMzZmMDEtNjA1ZC00YTQ1LWE5NzktZjIxYzU5YmYzOTUyIiwidCI6IjhhZWUyYmQ0LTk5OWItNGFiYS1hNWM1LWE1ZGI0ZTczYjA3NSJ9"
+        title="Blinkit Business Analytics Dashboard" data-aspect-ratio="1.778"></iframe>
+    </article>
 
-       <div class="section">
-    <div class="section-header">
+    <div class="section">
+      <div class="section-header">
         <h2 class="section-title">Election Trends</h2>
         <div class="section-toggle">+</div>
-    </div>
-    <div class="section-content">
+      </div>
+      <div class="section-content">
         <p>
-            This dashboard provides a comprehensive view of election details from 1977 to 2014, covering 11 election cycles. It tracks key trends such as voter turnout, party performance, and electoral shifts over the decades, offering historical insights into the changing political landscape.
+          This dashboard provides a comprehensive view of election details from 1977 to 2014, covering 11 election
+          cycles. It tracks key trends such as voter turnout, party performance, and electoral shifts over the decades,
+          offering historical insights into the changing political landscape.
         </p>
+      </div>
     </div>
-</div>
 
-<div class="section">
-    <div class="section-header">
+    <div class="section">
+      <div class="section-header">
         <h2 class="section-title">Geographical Insights</h2>
         <div class="section-toggle">+</div>
-    </div>
-    <div class="section-content">
+      </div>
+      <div class="section-content">
         <p>
-            A shape map visual displays district-level results, enabling users to explore regional differences and identify areas with significant electoral activity. This spatial representation highlights district performance across diverse regions.
+          A shape map visual displays district-level results, enabling users to explore regional differences and
+          identify areas with significant electoral activity. This spatial representation highlights district
+          performance across diverse regions.
         </p>
+      </div>
     </div>
-</div>
 
-<div class="section">
-    <div class="section-header">
+    <div class="section">
+      <div class="section-header">
         <h2 class="section-title">Party Performance</h2>
         <div class="section-toggle">+</div>
-    </div>
-    <div class="section-content">
+      </div>
+      <div class="section-content">
         <p>
-            Utilizing a top 10 party slicer, the dashboard allows for filtering and comparing performance across all major political parties. Detailed analysis of party trends facilitates a better understanding of their influence and strategic positioning over time.
+          Utilizing a top 10 party slicer, the dashboard allows for filtering and comparing performance across all major
+          political parties. Detailed analysis of party trends facilitates a better understanding of their influence and
+          strategic positioning over time.
         </p>
+      </div>
     </div>
-</div>
 
-<div class="section">
-    <div class="section-header">
+    <div class="section">
+      <div class="section-header">
         <h2 class="section-title">Voting Metrics</h2>
         <div class="section-toggle">+</div>
-    </div>
-    <div class="section-content">
+      </div>
+      <div class="section-content">
         <p>
-            The dashboard features a speed meter for total voting polls and a donut chart breaking down total voting between elevators and voters. These visuals provide quick insights into overall voter engagement and the efficiency of the electoral process.
+          The dashboard features a speed meter for total voting polls and a donut chart breaking down total voting
+          between elevators and voters. These visuals provide quick insights into overall voter engagement and the
+          efficiency of the electoral process.
         </p>
+      </div>
     </div>
-</div>
 
-<div class="section">
-    <div class="section-header">
+    <div class="section">
+      <div class="section-header">
         <h2 class="section-title">Candidate & Demographics</h2>
         <div class="section-toggle">+</div>
-    </div>
-    <div class="section-content">
+      </div>
+      <div class="section-content">
         <p>
-            Detailed candidate information is presented via a scatter chart and an interactive candidate table. Additionally, demographic insights are provided through a male/female donut chart and a caste separation donut chart (ST, SC, General), uncovering patterns in candidate profiles and voter demographics.
+          Detailed candidate information is presented via a scatter chart and an interactive candidate table.
+          Additionally, demographic insights are provided through a male/female donut chart and a caste separation donut
+          chart (ST, SC, General), uncovering patterns in candidate profiles and voter demographics.
         </p>
+      </div>
     </div>
-</div>
 
-        <!-- Download Project Button -->
-        <a href="https://drive.google.com/file/d/141P3pD6WOWkgOXIUFw1gRLKHceVt08Xd/view"
-            class="download-button">Download Project PDF</a>
+    <!-- Download Project Button -->
+    <a href="https://drive.google.com/file/d/141P3pD6WOWkgOXIUFw1gRLKHceVt08Xd/view" class="download-button">Download
+      Project PDF</a>
 
 
     <!-- Technical Skills Section -->
@@ -164,7 +169,8 @@
       </div>
     </div>
   </div>
-        <!-- Main Javascript -->
-        <script src="../assets/dashboard.js"></script>
+  <!-- Main Javascript -->
+  <script src="../assets/dashboard.js"></script>
 </body>
+
 </html>

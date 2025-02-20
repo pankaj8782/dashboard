@@ -6,7 +6,7 @@ Welcome to the **PlayStore Dashboard** Power BI report repository. This interact
 
 ## Live Preview
 
-[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739973383/fqzaufvfgg4jfjhzyamb.png)](https://bi-dashbpard.netlify.app/playstore/)
+[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739973383/fqzaufvfgg4jfjhzyamb.png)](https://bi-analysis.netlify.app/playstore/)
 
 *Click the banner above to access the live, interactive Power BI report.*
 

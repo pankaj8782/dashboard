@@ -6,7 +6,7 @@ Welcome to the **Blinkit Power BI Dashboard** repository. This project consolida
 
 ## Live Preview
 
-[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739973517/oxbxps0hagawlarrcalj.jpg)](https://bi-dashboard.netlify.app/blinkit/)
+[![Live Preview](https://res.cloudinary.com/ds6um53cx/image/upload/v1739973517/oxbxps0hagawlarrcalj.jpg)](https://bi-analysis.netlify.app/blinkit/)
 
 *Click the banner above to access the live, interactive Power BI dashboard.*
 
