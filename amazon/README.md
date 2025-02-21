@@ -38,4 +38,3 @@ Welcome to the **Amazon Sales Insights** Power BI report repository. This intera
 - **Overview:** Identify the top-selling products and highest-value customers.
 - **Insight:** Pinpoint key drivers behind sales success.
 - **Impact:** Enhance inventory management and customize marketing campaigns.
-- 
